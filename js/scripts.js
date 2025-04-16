@@ -94,7 +94,6 @@ const productsData = [
   }
 ];
 
-if (window.location.href.split("/").slice(-1).join("") === "index.html") {
   const addProduct = document.querySelector(".add-product");
 
   productsData.forEach(product => {
@@ -126,7 +125,6 @@ if (window.location.href.split("/").slice(-1).join("") === "index.html") {
     `;
     addProduct.innerHTML += html;
   });
-}
 const cartProduct = document.querySelector(".cart-product");
 
 const addCart = (id) => {
