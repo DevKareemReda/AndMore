@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
     <link rel="stylesheet" href="css/libs/all.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body style="background-color: #fff">
     <!-- Top-Bar -->
     <section class="top-bar">
       <div class="container">
@@ -217,8 +219,6 @@
       </div>
     </nav>
     <!-- ./nav -->
-
-
     <section class="sec-title">
       <div class="container">
         <div class="col-md-8 d-flex">
@@ -226,26 +226,50 @@
             ><b><a href="index.html">الرئيسية</a></b></span
           >
           <span class="mx-2"><b>/</b></span>
-          <span>مختارات اند مور</span>
+          <span>تفاصيل الشحن</span>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="cart-parent section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 me-auto text-left product">
-            <label for="" class="ms-4">الترتيب حسب:</label>
-            <select name="" id="">
-              <option value="" disabled>اختار</option>
-              <option value="">أ - ي</option>
-              <option value="">الأحدث</option>
-              <option value="">السعر الأقل أولا</option>
-              <option value="">السعر الأكثر أولا</option>
-            </select>
+          <div class="col-md-8">
+            <table class="table-cart">
+              <thead>
+                <tr>
+                  <th>اسم المنتج</th>
+                  <th>السعر</th>
+                  <th>كمية</th>
+                  <th>الاجمالي</th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-md-4 mt-4 mt-md-0">
+            <div class="summary-box">
+              <div>
+                <span>إجمالي السعر:</span>
+                <span class="total-all">138 KWD</span>
+              </div>
+              <div>
+                <span>الشحن:</span>
+                <span class="note">تعتمد على المدينة</span>
+              </div>
+
+              <hr>
+              <div class="total-label">
+                <span>إجمالي الطلب:</span>
+                <span class="total-all">138 KWD</span>
+              </div>
+
+              <a href="checkout.html">الاستمرار للدفع</a>
+              <a href="#">الاستمرار في التسوق</a>
+            </div>
           </div>
         </div>
-        <div class="row add-product section"></div>
       </div>
     </section>
 
@@ -308,8 +332,10 @@
         </div>
       </div>
     </footer>
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/andMore.js"></script>
   </body>
 </html>

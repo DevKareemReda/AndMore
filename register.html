@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
     <link rel="stylesheet" href="css/libs/all.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body style="background-color: #fff">
     <!-- Top-Bar -->
     <section class="top-bar">
       <div class="container">
@@ -219,33 +221,52 @@
     <!-- ./nav -->
 
 
-    <section class="sec-title">
-      <div class="container">
-        <div class="col-md-8 d-flex">
-          <span
-            ><b><a href="index.html">الرئيسية</a></b></span
-          >
-          <span class="mx-2"><b>/</b></span>
-          <span>مختارات اند مور</span>
-        </div>
-      </div>
-    </section>
-
     <section class="section">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 me-auto text-left product">
-            <label for="" class="ms-4">الترتيب حسب:</label>
-            <select name="" id="">
-              <option value="" disabled>اختار</option>
-              <option value="">أ - ي</option>
-              <option value="">الأحدث</option>
-              <option value="">السعر الأقل أولا</option>
-              <option value="">السعر الأكثر أولا</option>
-            </select>
+          <div class="col-md-8 mb-4 text-center mx-auto">
+            <div class="register-top d-flex justify-content-center">
+              <a href="#" class="linkTop active" data-link="one">تسجيل دخول</a>
+              <span class="mx-4">|</span>
+              <a href="#" class="linkTop" data-link="two">إنشاء حساب</a>
+            </div>
+          </div>
+          <div class="col-md-6 mx-auto rgister-hidden active" id="one">
+            <div class="regsiter-client">
+              <h3>العملاء المسجلين</h3>
+              <p>إذا كان لديك حساب ، فقم بتسجيل الدخول باستخدام عنوان بريدك الإلكتروني.</p>
+              <form action="" class="mt-4">
+                <input type="text" name="email" placeholder="البريد الإلكتروني" class="mb-4">
+                <input type="password" name="password" placeholder="كلمة المرور" class="mb-4">
+                <div class="d-flex justify-content-between">
+                  <a href="#">هل نسيت كلمة المرور؟</a>
+                  <a href="#">ليس لديك حساب بعد؟ أنشئ حساب جديد</a>
+                </div>
+                <button class="btn btn-primary mt-4" style="width: fit-content; background-color: #0abab5;">تسجيل دخول</button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-6 mx-auto rgister-hidden" id="two">
+            <div class="regsiter-client">
+              <h3>إنشاء حساب عميل جديد</h3>
+              <p>معلومات شخصية</p>
+              <form action="" class="mt-4">
+                <input type="text" name="full_name" placeholder="الإسم الكامل" class="mb-4">
+                <input type="text" name="mobile_number" placeholder="رقم الهاتف" class="mb-4">
+                <input type="text" name="email" placeholder="البريد الإلكتروني" class="mb-4">
+                <input type="password" name="password" placeholder="كلمة المرور" class="mb-4">
+                <div class="d-flex justify-content-between">
+                  <a href="#">هل لديك حساب ؟ Login!</a>
+                  <span>عند إنشاء الحساب، فإنك توافق على
+                    <a href="terms-and-conditions.html">الشروط والأحكام و</a>
+                    <a href="terms-and-conditions.html">سياسة الخصوصية</a>
+                  </span>
+                </div>
+                <button class="btn btn-primary mt-4" style="width: fit-content; background-color: #0abab5;">تسجيل دخول</button>
+              </form>
+            </div>
           </div>
         </div>
-        <div class="row add-product section"></div>
       </div>
     </section>
 
@@ -262,7 +283,7 @@
               <button id="closeFilter" fdprocessedid="nrpm6">رجوع</button>
           </div>
       </div>
-  </div>
+    </div>
     <footer class="section">
       <div class="container">
         <div class="row">
@@ -308,8 +329,11 @@
         </div>
       </div>
     </footer>
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
+    <script src="js/libs/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/cart.js"></script>
-    <script src="js/andMore.js"></script>
+    <script src="js/register.js"></script>
   </body>
 </html>

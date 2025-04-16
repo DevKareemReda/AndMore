@@ -6,9 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/libs/bootstrap.min.css" />
     <link rel="stylesheet" href="css/libs/all.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/libs/owl.theme.default.min.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body style="background-color: #fff">
     <!-- Top-Bar -->
     <section class="top-bar">
       <div class="container">
@@ -217,8 +219,6 @@
       </div>
     </nav>
     <!-- ./nav -->
-
-
     <section class="sec-title">
       <div class="container">
         <div class="col-md-8 d-flex">
@@ -226,26 +226,196 @@
             ><b><a href="index.html">الرئيسية</a></b></span
           >
           <span class="mx-2"><b>/</b></span>
-          <span>مختارات اند مور</span>
+          <span><b><a href="cart.html">تفاصيل الشحن</a></b></span>
+          <span class="mx-2"><b>/</b></span>
+          <span>عنوان الشحن</span>
         </div>
       </div>
     </section>
-
-    <section class="section">
+    <section class="section checkout">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 me-auto text-left product">
-            <label for="" class="ms-4">الترتيب حسب:</label>
-            <select name="" id="">
-              <option value="" disabled>اختار</option>
-              <option value="">أ - ي</option>
-              <option value="">الأحدث</option>
-              <option value="">السعر الأقل أولا</option>
-              <option value="">السعر الأكثر أولا</option>
-            </select>
+          <div class="col-md-6">
+            <div class="mb-3">
+              <h4 class="d-flex text-center">زبون متكرر؟ <a href="#" class="me-2" style="color: #0abab5;">اضغط هنا لتسجيل الدخول</a></h4>
+            </div>
+            <div class="d-flex btn-head">
+              <button class="btn tabs-checkout active" data-tab="one">توصيل علي العنوان</button>
+            <button class="btn tabs-checkout me-3 btn-outline-primary" data-tab="two">توصيل عبر الهاتف</button>
+            </div>
+            <form action="" class="section">
+              <div class="tab-hidden active" id="one">
+                <div class="row">
+                <div class="col-md-12">
+                  <label for="user">الاسم الكامل<span style="color: #f00;">*</span></label>
+              <input type="text" name="firstname" placeholder="ادخل الاسم الكامل">
+                </div>
+                <div class="col-md-6">
+                  <label for="user">رقم الهاتف<span style="color: #f00;">*</span></label>
+              <input type="text" name="number" placeholder="ادخل رقم الهاتف">
+                </div>
+                <div class="col-md-6">
+                  <label for="user">البريد الالكتروني<span style="color: #f00;">*</span></label>
+              <input type="email" name="email" placeholder="ادخل البريد الإلكتروني">
+                </div>
+                <div class="col-md-6">
+                  <label for="user">البريد الالكتروني<span style="color: #f00;">*</span></label>
+                  <select name="country" required>
+                    <option value="">اختر الدولة</option>
+                    <option value="kuwait">الكويت</option>
+                    <option value="saudi">السعودية</option>
+                    <option value="uae">الإمارات</option>
+                    <option value="egypt">مصر</option>
+                    <option value="qatar">قطر</option>
+                    <option value="oman">عُمان</option>
+                    <option value="bahrain">البحرين</option>
+                    <option value="jordan">الأردن</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="region">المنطقة<span style="color: #f00;">*</span></label></label>
+                  <select id="region">
+                    <option value="">اختر المنطقة</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="region">قطعة<span style="color: #f00;">*</span></label></label>
+                  <select id="region">
+                    <option value="">اختر رقم القطعة</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="user">الشارع<span style="color: #f00;">*</span></label>
+              <input type="text" name="address" placeholder="ادخل عنوان الشارع">
+                </div>
+                <div class="col-md-12">
+                  <label for="gada">جادة<span style="color: #f00;">*</span></label>
+              <input type="text" name="gada" placeholder="ادخل الشارع الرئيسي" id="gada">
+                </div>
+                <div class="col-md-12">
+                  <label for="home">رقم البيت / المبني<span style="color: #f00;">*</span></label>
+              <input type="text" name="home" placeholder="ادخل رقم البيت" id="home">
+                </div>
+                <div class="col-md-12">
+                  <label for="floor">رقم الطابق</label>
+              <input type="text" name="floor" placeholder="ادخل رقم الدور" id="floor">
+                </div>
+                <div class="col-md-12">
+                  <label for="flat">رقم الشقة</label>
+              <input type="text" name="flat" placeholder="ادخل رقم الشقة" id="flat">
+                </div>
+                <div class="col-md-12">
+                  <label for="notice">ملاحظات</label>
+              <input type="text" name="notice" placeholder="ملحوظات" id="notice">
+                </div>
+                <div class="col-md-12 d-flex btns">
+                  <button class="btn btn-primary ms-3">حفظ</button>
+                  <button class="btn btn-outline-primary">الغاء</button>
+                </div>
+                </div>
+              </div>
+              <div class="tab-hidden" id="two">
+                <div class="row">
+                <div class="col-md-12">
+                  <label for="user">الاسم الكامل<span style="color: #f00;">*</span></label>
+              <input type="text" name="firstname" placeholder="ادخل الاسم الكامل">
+                </div>
+                <div class="col-md-12">
+                  <label for="user">رقم الهاتف<span style="color: #f00;">*</span></label>
+              <input type="text" name="number" placeholder="ادخل رقم الهاتف">
+                </div>
+                <div class="col-md-6">
+                  <label for="user">الدولة<span style="color: #f00;">*</span></label>
+                  <select name="country" required>
+                    <option value="">اختر الدولة</option>
+                    <option value="kuwait">الكويت</option>
+                    <option value="saudi">السعودية</option>
+                    <option value="uae">الإمارات</option>
+                    <option value="egypt">مصر</option>
+                    <option value="qatar">قطر</option>
+                    <option value="oman">عُمان</option>
+                    <option value="bahrain">البحرين</option>
+                    <option value="jordan">الأردن</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="region">المنطقة<span style="color: #f00;">*</span></label></label>
+                  <select id="region">
+                    <option value="">اختر المنطقة</option>
+                  </select>
+                </div>
+                <div class="col-md-12">
+                  <label for="notice">ملاحظات</label>
+              <input type="text" name="notice" placeholder="ملحوظات" id="notice">
+                </div>
+                <div class="col-md-12 d-flex btns">
+                  <button class="btn btn-primary ms-3">حفظ</button>
+                  <button class="btn btn-outline-primary">الغاء</button>
+                </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="col-md-5 me-auto">
+            <div class="checkout-left">
+              <h3>تفاصيل الطلب (2 منتجات)</h3>
+              <div class="checkout-inner"></div>
+              <div class="cupon py-4">
+                <label for="cupon">تطبيق القسيمة</label>
+                <div class=" d-flex mt-2 align-items-center justify-content-between">
+                  <input type="text" name="cupon" placeholder="أدخل رقم الكوبون">
+                  <button class="btn">تطبيق</button>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between align-items-center py-3 mb-4" style="border-top: 1px solid #f1f1f1;border-bottom: 1px solid #f1f1f1;">
+                <span>إجمالي قيمة الطلب</span>
+                <span>30.75 KWD</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span style="color: #0abab5;">قيمة الخصم</span>
+                <span  style="color: #0abab5;">-15.37 KWD</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center my-2">
+                <span>قيمة الشحن</span>
+                <span>2 KWD</span>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <span>المجموع</span>
+                <span>17.38 KWD</span>
+              </div>
+              <h4 class="text-center my-5 pb-3">اختر وسيلة الدفع المناسبة</h4>
+              <div class="d-flex">
+                <div>
+                  <input type="radio" name="pay" id="pay1"> <label for="pay1">دفع اونلاين</label>
+                </div>
+                <div></div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <input type="radio" name="pay" id="pay2"> <label for="pay2">دفع عند الاستلام</label>
+                </div>
+                <div></div>
+              </div>
+              <div class="d-flex">
+                <div>
+                  <input type="radio" name="pay" id="pay3"> <label for="pay3">دفع من المحفظة</label>
+                </div>
+                <div></div>
+              </div>
+              <div class="d-flex mt-4">
+                <div>
+                  <input type="radio" name="saved" id="pay4"> <label for="pay4" style="color: #0abab5;">الموافقة على الشروط والاحكام</label>
+                </div>
+                <div></div>
+              </div>
+              <a href="#" class="btn btn-primary">المتابعة للدفع</a>
+            </div>
           </div>
         </div>
-        <div class="row add-product section"></div>
       </div>
     </section>
 
@@ -308,8 +478,9 @@
         </div>
       </div>
     </footer>
+    <script src="js/libs/jquery-3.7.1.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/cart.js"></script>
-    <script src="js/andMore.js"></script>
+    <script src="js/checkout.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
